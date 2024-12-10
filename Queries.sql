@@ -1,8 +1,5 @@
 Select * from tech_support_dataset;
 
-Select count(Issue_Category) from tech_support_dataset;
-
-Select avg(`Resolution_Time(min)`) from tech_support_dataset;
 
 Select Customer_Issue, count(Customer_Issue)
 from tech_support_dataset
