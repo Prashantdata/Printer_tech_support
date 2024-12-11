@@ -1,1 +1,0 @@
-Select avg(`Resolution_Time(min)`) from tech_support_dataset;
