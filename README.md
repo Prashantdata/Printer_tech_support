@@ -73,7 +73,7 @@ group by Customer_Issue,Issue_Category
 Order By Issue_Category,count(Customer_Issue) desc;
 ```
 <p>
-    <img src="assets\3_Detailed_Issue.jpg" width="550" height="400" />
+    <img src="assets\3_Detailed_Issue.jpg" width="1080" height="400" />
 </p>
 
 # * CONCLUSION
