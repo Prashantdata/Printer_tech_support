@@ -5,19 +5,19 @@ Data Link : https://www.kaggle.com/datasets/steve1215rogg/tech-support-conversat
 
 SQL Queries? check them out here : [SQL Folder](/SQL%20Folder/)
 
-# Tools I Used
+# USED TOOLS
 - Microsoft Excel for data cleaning, manipulation and bar graph.
 - SQL fror analysis.
 - Git & Github for version control and sharing my SQL scripts and analysis ensuring collaboration and project tracking.
 
-# Question i have Solved
+# SOLVED QUESTIONS
 - What are the total issues recorded today ?
 - What was the average resolution time ?
 - How many issues are pending ?
 - Top 3 issues category wise ?
 - Detailed issues for clearification ?
 
-# Analysis
+# ANALYSIS
 Each query for this project aimed at investigating specific aspect of the printer tech solution center.
 Here,s How i approached each question.
 
@@ -72,111 +72,9 @@ Where Issue_Category = "Hardware" OR Issue_Category = "Performance" OR Issue_Cat
 group by Customer_Issue,Issue_Category
 Order By Issue_Category,count(Customer_Issue) desc;
 ```
+<p>
+    <img src="assets\3_Detailed_Issue.jpg" width="520" height="300" />
+</p>
 
-[
-  {
-    "Customer_Issue": "Unable to access email",
-    "Issue_Category": "Hardware",
-    "count(Customer_Issue)": "65"
-  },
-  {
-    "Customer_Issue": "Cannot connect to Wi-Fi",
-    "Issue_Category": "Hardware",
-    "count(Customer_Issue)": "64"
-  },
-  {
-    "Customer_Issue": "Blue screen error",
-    "Issue_Category": "Hardware",
-    "count(Customer_Issue)": "58"
-  },
-  {
-    "Customer_Issue": "Printer not responding",
-    "Issue_Category": "Hardware",
-    "count(Customer_Issue)": "56"
-  },
-  {
-    "Customer_Issue": "Software installation failure",
-    "Issue_Category": "Hardware",
-    "count(Customer_Issue)": "56"
-  },
-  {
-    "Customer_Issue": "Slow system performance",
-    "Issue_Category": "Hardware",
-    "count(Customer_Issue)": "53"
-  },
-  {
-    "Customer_Issue": "Forgot password",
-    "Issue_Category": "Hardware",
-    "count(Customer_Issue)": "50"
-  },
-  {
-    "Customer_Issue": "Printer not responding",
-    "Issue_Category": "Network",
-    "count(Customer_Issue)": "72"
-  },
-  {
-    "Customer_Issue": "Slow system performance",
-    "Issue_Category": "Network",
-    "count(Customer_Issue)": "59"
-  },
-  {
-    "Customer_Issue": "Software installation failure",
-    "Issue_Category": "Network",
-    "count(Customer_Issue)": "54"
-  },
-  {
-    "Customer_Issue": "Forgot password",
-    "Issue_Category": "Network",
-    "count(Customer_Issue)": "53"
-  },
-  {
-    "Customer_Issue": "Unable to access email",
-    "Issue_Category": "Network",
-    "count(Customer_Issue)": "52"
-  },
-  {
-    "Customer_Issue": "Blue screen error",
-    "Issue_Category": "Network",
-    "count(Customer_Issue)": "48"
-  },
-  {
-    "Customer_Issue": "Cannot connect to Wi-Fi",
-    "Issue_Category": "Network",
-    "count(Customer_Issue)": "40"
-  },
-  {
-    "Customer_Issue": "Slow system performance",
-    "Issue_Category": "Performance",
-    "count(Customer_Issue)": "77"
-  },
-  {
-    "Customer_Issue": "Cannot connect to Wi-Fi",
-    "Issue_Category": "Performance",
-    "count(Customer_Issue)": "63"
-  },
-  {
-    "Customer_Issue": "Software installation failure",
-    "Issue_Category": "Performance",
-    "count(Customer_Issue)": "53"
-  },
-  {
-    "Customer_Issue": "Printer not responding",
-    "Issue_Category": "Performance",
-    "count(Customer_Issue)": "53"
-  },
-  {
-    "Customer_Issue": "Blue screen error",
-    "Issue_Category": "Performance",
-    "count(Customer_Issue)": "48"
-  },
-  {
-    "Customer_Issue": "Unable to access email",
-    "Issue_Category": "Performance",
-    "count(Customer_Issue)": "45"
-  },
-  {
-    "Customer_Issue": "Forgot password",
-    "Issue_Category": "Performance",
-    "count(Customer_Issue)": "42"
-  }
-]
+# LEARNINGS
+# CONCLUSION
