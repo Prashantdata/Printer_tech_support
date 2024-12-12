@@ -51,4 +51,6 @@ Where Issue_status = "Pending"
 group by Issue_status,Issue_Category
 Order By issue_status, count(Issue_Status) desc
 ```
-![Pending_Issues](assets\2_Pending_Issues.jpg)
+<p>
+    <img src="assets\2_Pending_Issues.jpg" width="220" height="240" />
+</p>
