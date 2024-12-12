@@ -51,4 +51,4 @@ Where Issue_status = "Pending"
 group by Issue_status,Issue_Category
 Order By issue_status, count(Issue_Status) desc
 ```
-![Pending_Issues](C:\Users\DELL\OneDrive\Desktop\Prashant\Printer_tech_support\assets\2_Pending_Issues.jpg)
+![Pending_Issues](assets\2_Pending_Issues.jpg)
