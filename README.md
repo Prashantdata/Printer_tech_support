@@ -39,3 +39,5 @@ To identify the average i have uses the average function to identify the avearag
 Select round(avg(`Resolution_Time(min)`),0)+ minute as Average_Time
 From tech_support_dataset;
 ```
+|Average Time| 63 Min|
+|------------|-------|
