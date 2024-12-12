@@ -54,3 +54,10 @@ Order By issue_status, count(Issue_Status) desc
 <p>
     <img src="assets\2_Pending_Issues.jpg" width="1080" height="250" />
 </p>
+
+### 4. Top 3 Issues
+I have used the excel pivot table to make this bar graph to know the top 3 issues
+
+<p>
+    <img src="assets\3_Top_3_Issues.jpg" width="1080" height="250" />
+</p>
