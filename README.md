@@ -28,7 +28,7 @@ To identify the total issues i used the count function to check the total isssue
 Select count(Issue_Category)
 From tech_support_dataset;
 ```
-![Total Issues](assets\Issues_Count.png)
+![Total Issues](assets\1_Issues_Count.png)
 
 ### 2. What was the average resolution time?
 To identify the average i have uses the average function to identify the avearage time used to solve the issues of customer.
