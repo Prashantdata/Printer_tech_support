@@ -1,5 +1,6 @@
-Select Customer_Issue, count(Customer_Issue)
+Select Customer_Issue, Issue_Category,count(Customer_Issue)
 from tech_support_dataset
-group by Customer_Issue
-Order By count(Customer_Issue) desc;
+Where Issue_Category = "Hardware" OR Issue_Category = "Performance" OR Issue_Category ="Network"
+group by Customer_Issue,Issue_Category
+Order By Issue_Category,count(Customer_Issue) desc;
 

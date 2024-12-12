@@ -6,7 +6,7 @@ Data Link : https://www.kaggle.com/datasets/steve1215rogg/tech-support-conversat
 SQL Queries? check them out here : [SQL Folder](/SQL%20Folder/)
 
 # Tools I Used
-- Microsoft Excel for data cleaning and manipulation.
+- Microsoft Excel for data cleaning, manipulation and bar graph.
 - SQL fror analysis.
 - Git & Github for version control and sharing my SQL scripts and analysis ensuring collaboration and project tracking.
 
@@ -61,3 +61,42 @@ I have used the excel pivot table to make this bar graph to know the top 3 issue
 <p>
     <img src="assets\3_Top_3_Issues.jpg" width="520" height="300" />
 </p>
+
+### 5. Customer Queries in detail
+So i have filtered out the top 3 pending queries and dig in the factual issues for better resolution.
+
+```sql
+Select Customer_Issue, Issue_Category,count(Customer_Issue)
+from tech_support_dataset
+Where Issue_Category = "Hardware" OR Issue_Category = "Performance" OR Issue_Category ="Network"
+group by Customer_Issue,Issue_Category
+Order By Issue_Category,count(Customer_Issue) desc;
+```
+import pandas as pd
+
+# Data for the table
+data = [
+    {"Issue Category": "Hardware", "Customer Issue": "Unable to access email", "Count": 65},
+    {"Issue Category": "Hardware", "Customer Issue": "Cannot connect to Wi-Fi", "Count": 64},
+    {"Issue Category": "Hardware", "Customer Issue": "Blue screen error", "Count": 58},
+    {"Issue Category": "Hardware", "Customer Issue": "Printer not responding", "Count": 56},
+    {"Issue Category": "Hardware", "Customer Issue": "Software installation failure", "Count": 56},
+    {"Issue Category": "Hardware", "Customer Issue": "Slow system performance", "Count": 53},
+    {"Issue Category": "Hardware", "Customer Issue": "Forgot password", "Count": 50},
+    {"Issue Category": "Network", "Customer Issue": "Printer not responding", "Count": 72},
+    {"Issue Category": "Network", "Customer Issue": "Slow system performance", "Count": 59},
+    {"Issue Category": "Network", "Customer Issue": "Software installation failure", "Count": 54},
+    {"Issue Category": "Network", "Customer Issue": "Forgot password", "Count": 53},
+    {"Issue Category": "Network", "Customer Issue": "Unable to access email", "Count": 52},
+    {"Issue Category": "Network", "Customer Issue": "Blue screen error", "Count": 48},
+    {"Issue Category": "Network", "Customer Issue": "Cannot connect to Wi-Fi", "Count": 40},
+    {"Issue Category": "Performance", "Customer Issue": "Slow system performance", "Count": 77},
+    {"Issue Category": "Performance", "Customer Issue": "Cannot connect to Wi-Fi", "Count": 63},
+    {"Issue Category": "Performance", "Customer Issue": "Software installation failure", "Count": 53},
+    {"Issue Category": "Performance", "Customer Issue": "Printer not responding", "Count": 53},
+    {"Issue Category": "Performance", "Customer Issue": "Blue screen error", "Count": 48},
+    {"Issue Category": "Performance", "Customer Issue": "Unable to access email", "Count": 45},
+    {"Issue Category": "Performance", "Customer Issue": "Forgot password", "Count": 42},
+]
+
+
