@@ -1,3 +1,4 @@
-Select count(Issue_Category) from tech_support_dataset;
+Select count(Issue_Category)
+From tech_support_dataset;
 
 
