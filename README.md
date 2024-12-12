@@ -52,5 +52,5 @@ group by Issue_status,Issue_Category
 Order By issue_status, count(Issue_Status) desc
 ```
 <p>
-    <img src="assets\2_Pending_Issues.jpg" width="1024" height="800" />
+    <img src="assets\2_Pending_Issues.jpg" width="500" height="300" />
 </p>
