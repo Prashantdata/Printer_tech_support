@@ -72,31 +72,111 @@ Where Issue_Category = "Hardware" OR Issue_Category = "Performance" OR Issue_Cat
 group by Customer_Issue,Issue_Category
 Order By Issue_Category,count(Customer_Issue) desc;
 ```
-import pandas as pd
 
-# Data for the table
-data = [
-    {"Issue Category": "Hardware", "Customer Issue": "Unable to access email", "Count": 65},
-    {"Issue Category": "Hardware", "Customer Issue": "Cannot connect to Wi-Fi", "Count": 64},
-    {"Issue Category": "Hardware", "Customer Issue": "Blue screen error", "Count": 58},
-    {"Issue Category": "Hardware", "Customer Issue": "Printer not responding", "Count": 56},
-    {"Issue Category": "Hardware", "Customer Issue": "Software installation failure", "Count": 56},
-    {"Issue Category": "Hardware", "Customer Issue": "Slow system performance", "Count": 53},
-    {"Issue Category": "Hardware", "Customer Issue": "Forgot password", "Count": 50},
-    {"Issue Category": "Network", "Customer Issue": "Printer not responding", "Count": 72},
-    {"Issue Category": "Network", "Customer Issue": "Slow system performance", "Count": 59},
-    {"Issue Category": "Network", "Customer Issue": "Software installation failure", "Count": 54},
-    {"Issue Category": "Network", "Customer Issue": "Forgot password", "Count": 53},
-    {"Issue Category": "Network", "Customer Issue": "Unable to access email", "Count": 52},
-    {"Issue Category": "Network", "Customer Issue": "Blue screen error", "Count": 48},
-    {"Issue Category": "Network", "Customer Issue": "Cannot connect to Wi-Fi", "Count": 40},
-    {"Issue Category": "Performance", "Customer Issue": "Slow system performance", "Count": 77},
-    {"Issue Category": "Performance", "Customer Issue": "Cannot connect to Wi-Fi", "Count": 63},
-    {"Issue Category": "Performance", "Customer Issue": "Software installation failure", "Count": 53},
-    {"Issue Category": "Performance", "Customer Issue": "Printer not responding", "Count": 53},
-    {"Issue Category": "Performance", "Customer Issue": "Blue screen error", "Count": 48},
-    {"Issue Category": "Performance", "Customer Issue": "Unable to access email", "Count": 45},
-    {"Issue Category": "Performance", "Customer Issue": "Forgot password", "Count": 42},
+[
+  {
+    "Customer_Issue": "Unable to access email",
+    "Issue_Category": "Hardware",
+    "count(Customer_Issue)": "65"
+  },
+  {
+    "Customer_Issue": "Cannot connect to Wi-Fi",
+    "Issue_Category": "Hardware",
+    "count(Customer_Issue)": "64"
+  },
+  {
+    "Customer_Issue": "Blue screen error",
+    "Issue_Category": "Hardware",
+    "count(Customer_Issue)": "58"
+  },
+  {
+    "Customer_Issue": "Printer not responding",
+    "Issue_Category": "Hardware",
+    "count(Customer_Issue)": "56"
+  },
+  {
+    "Customer_Issue": "Software installation failure",
+    "Issue_Category": "Hardware",
+    "count(Customer_Issue)": "56"
+  },
+  {
+    "Customer_Issue": "Slow system performance",
+    "Issue_Category": "Hardware",
+    "count(Customer_Issue)": "53"
+  },
+  {
+    "Customer_Issue": "Forgot password",
+    "Issue_Category": "Hardware",
+    "count(Customer_Issue)": "50"
+  },
+  {
+    "Customer_Issue": "Printer not responding",
+    "Issue_Category": "Network",
+    "count(Customer_Issue)": "72"
+  },
+  {
+    "Customer_Issue": "Slow system performance",
+    "Issue_Category": "Network",
+    "count(Customer_Issue)": "59"
+  },
+  {
+    "Customer_Issue": "Software installation failure",
+    "Issue_Category": "Network",
+    "count(Customer_Issue)": "54"
+  },
+  {
+    "Customer_Issue": "Forgot password",
+    "Issue_Category": "Network",
+    "count(Customer_Issue)": "53"
+  },
+  {
+    "Customer_Issue": "Unable to access email",
+    "Issue_Category": "Network",
+    "count(Customer_Issue)": "52"
+  },
+  {
+    "Customer_Issue": "Blue screen error",
+    "Issue_Category": "Network",
+    "count(Customer_Issue)": "48"
+  },
+  {
+    "Customer_Issue": "Cannot connect to Wi-Fi",
+    "Issue_Category": "Network",
+    "count(Customer_Issue)": "40"
+  },
+  {
+    "Customer_Issue": "Slow system performance",
+    "Issue_Category": "Performance",
+    "count(Customer_Issue)": "77"
+  },
+  {
+    "Customer_Issue": "Cannot connect to Wi-Fi",
+    "Issue_Category": "Performance",
+    "count(Customer_Issue)": "63"
+  },
+  {
+    "Customer_Issue": "Software installation failure",
+    "Issue_Category": "Performance",
+    "count(Customer_Issue)": "53"
+  },
+  {
+    "Customer_Issue": "Printer not responding",
+    "Issue_Category": "Performance",
+    "count(Customer_Issue)": "53"
+  },
+  {
+    "Customer_Issue": "Blue screen error",
+    "Issue_Category": "Performance",
+    "count(Customer_Issue)": "48"
+  },
+  {
+    "Customer_Issue": "Unable to access email",
+    "Issue_Category": "Performance",
+    "count(Customer_Issue)": "45"
+  },
+  {
+    "Customer_Issue": "Forgot password",
+    "Issue_Category": "Performance",
+    "count(Customer_Issue)": "42"
+  }
 ]
-
-
