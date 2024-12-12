@@ -73,8 +73,15 @@ group by Customer_Issue,Issue_Category
 Order By Issue_Category,count(Customer_Issue) desc;
 ```
 <p>
-    <img src="assets\3_Detailed_Issue.jpg" width="520" height="300" />
+    <img src="assets\3_Detailed_Issue.jpg" width="550" height="400" />
 </p>
 
-# * LEARNINGS
 # * CONCLUSION
+
+### Insights
+
+- Total of 1896 issues are very high in a day so have to check the system and service properly
+- Average resolution time is also very high so have to maile the average call time and resolution time for good customer service 
+- 25% of the queries are still pending so either have to increase the staff or decrease the resolution time.
+- Top 3 Issues are Hardware, Network and Performance have to assign the respective team to get through the issue and resolve it for better customer service.
+
