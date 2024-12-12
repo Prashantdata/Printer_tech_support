@@ -41,3 +41,14 @@ From tech_support_dataset;
 ```
 |Average Time| 63 Min|
 |------------|-------|
+
+### 3. Pending Issues
+To identify the pending issues i have uses the where function to filter the pending queries and grouped the category and order it in descinding to know the clearity of pending issues and find out priorites from data set.
+```sql
+Select Issue_Status,Issue_Category, count(Issue_status)
+from tech_support_dataset
+Where Issue_status = "Pending"
+group by Issue_status,Issue_Category
+Order By issue_status, count(Issue_Status) desc
+```
+![Pending_Issues](assets\2_Pending_Issues.png)
