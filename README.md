@@ -24,15 +24,17 @@ Here,s How i approached each question.
 ### 1. Total issues recorderd today
 To identify the total issues i used the count function to check the total isssues from the dataset.
 
-'''sql
+```sql
 Select count(Issue_Category)
 From tech_support_dataset;
-'''
+```
+
+! [Total Issues](assests\Issues Count.png)
 
 ### 2. What was the average resolution time?
 To identify the average i have uses the average function to identify the avearage time used to solve the issues of customer.
 
-'''sql
+```sql
 Select round(avg(`Resolution_Time(min)`),0)+ minute as Average_Time
 From tech_support_dataset;
-'''
+```
