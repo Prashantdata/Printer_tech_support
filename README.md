@@ -59,5 +59,5 @@ Order By issue_status, count(Issue_Status) desc
 I have used the excel pivot table to make this bar graph to know the top 3 issues
 
 <p>
-    <img src="assets\3_Top_3_Issues.jpg" width="500" height="250" />
+    <img src="assets\3_Top_3_Issues.jpg" width="520" height="300" />
 </p>
