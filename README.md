@@ -1,5 +1,5 @@
 # * INTRODUCTION   
-HELLO VIEWER THIS IS THE DATA SET I HAVE DOWNLOADED FROM THE KAGGLE.COM the data consist of the tech support solution there is less data with no date so i have assumed it as a 1 day data
+Hello viewer this is the dataset from KAGGLE.COM the data consist of the tech support solution there is less data with no date so i have assumed it as a 1 day data
 
 Data Link : https://www.kaggle.com/datasets/steve1215rogg/tech-support-conversations-dataset
 
